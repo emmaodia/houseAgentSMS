@@ -20,7 +20,7 @@ const sendSms = (phone, message) => {
       .then(message => console.log(message.sid));
 }
 
-cron.schedule('*/5 * * * *', () => {
+cron.schedule('0 */8 * * *', () => {
     console.log('SMS Sent successfully!');
     sendSms("+2347056355433", "This is from the server!");
 });

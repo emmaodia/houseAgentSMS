@@ -22,7 +22,7 @@ const sendSms = (phone, message) => {
 
 cron.schedule('0 */8 * * *', () => {
     console.log('SMS Sent successfully!');
-    //sendSms("+2347056355433", "This is from the server!");
+    sendSms("+2348037869866", "Oga Prince. Remember my apartment! Thank you.");
 });
 
 app.listen(port, () => {
